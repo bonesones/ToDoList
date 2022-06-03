@@ -16,51 +16,162 @@
           <h2 class = "secondary-title">Кто начал >> что за проект >>И сама досочка</h2>
         </div>
         <div class="col-4 float-right">
-          <button class = "new-col-btn btn btn-primary float-end mt-3" type="button">
+
+          <button class = "new-col-btn btn btn-primary float-end mt-4" type="button" data-bs-toggle="modal" data-bs-target="#Modal">
             Новый столбец
           </button>
+
+          <!-- Модальное окно -->
+          <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class = "modal-body-txt mt-3">
+                    <form>
+                      <div class="mb-3">
+                        <div class = "row">
+                          <div class= "col-7">
+                            <label for="recipient-name" class="col-form-label">Название нового столбца:</label>
+                            <input type="text" class="form-control" id="col-name" placeholder="Текст">
+
+                            <label for="recipient-name" class="col-form-label mt-5">Описание</label>
+                            <input type="text" class="form-control" id="col-description" placeholder="Описание стобца">
+
+                            <label for="recipient-name" class="col-form-label mt-5">Действия </label>
+                            <div class="row mt-3">
+                              <div class="col">
+                                <input type="text" class="form-control form-action">
+                              </div>
+                              <div class="col">
+                                <input type="text" class="form-control form-action">
+                              </div>
+                              <div class="col mt-4">
+                                <button type="button" class = "btn btn-showMore">Подробнее:</button>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <input type="text" class="form-control form-action">
+                              </div>
+                              <div class="col">
+                                <input type="text" class="form-control form-action">
+                              </div>
+                              <div class="col">
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <p class = "add-members float-end">Добавить участников</p>
+                          </div>
+                      </div>
+                    </form>
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Конец модального окна -->    
       </div>
     </div>
   </header>
 
   <main class = 'task-table'>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="tasks afairs mt-4">
-            <div class='d-flex heading overflow-hidden'>
-              <h3 class='task-heading task-heading-title pt-1 text-center'>Дела</h3>
-              <span class= 'edit align-bottom'>...</span>
+    <div class = "container">
+      <div class = "row">
+        <div class = "col d-flex justify-content-center">
+          <div class = "tasks tasks-afairs">
+            <div class = 'd-flex task-heading'>
+              <h3 class = 'task-heading-title text-center mt-3 pt-1'>Дела</h3>
+              <span class = 'edit'>...</span>
             </div>
 
             <div class="task-info mt-5">
-
+              <p class = "task-info-header float-start">Суть задачи</p>
+              <img class = "task-info-avatar float-end" src = "images/Ellipse9.png">
+              <p class = "task-info-addition float-start">Доп. информация</p>
             </div>
 
+            <div class = "task-more mt-5"></div>
+            <div class = "task-more mt-5"></div>
 
+            <button class = "add-task-btn btn btn-light mt-5">Добавить задачу</button>
           </div>
         </div>
-        <div class="col">
-          <div class="tasks mt-4">
+        <div class="col d-flex justify-content-center">
+          <div class = "tasks tasks-process">
+            <div class = 'd-flex task-heading'>
+              <h3 class = 'task-heading-title text-center mt-3 pt-1'>В процессе</h3>
+              <span class = 'edit'>...</span>
+            </div>
 
+            <div class="task-info mt-5 overflow-hidden">
+              <p class = "task-info-header float-start">Суть задачи</p>
+              <img class = "task-info-avatar float-end" src = "images/Ellipse9.png">
+              <p class = "task-info-addition float-start">Доп. информация</p>
+            </div>
+
+            <div class = "task-more mt-5"></div>
+            <div class = "task-more mt-5"></div>
+
+            <button class = "add-task-btn btn btn-light mt-5">Добавить задачу</button>
           </div>
         </div>
-        <div class="col">
-          <div class="tasks mt-4">
-          </div>
+        <div class="col d-flex justify-content-center">
+          <div class = "tasks tasks-problems">
+            <div class = 'd-flex task-heading'>
+              <h3 class = 'task-heading-title text-center mt-3 pt-1'>Проблемы</h3>
+              <span class = 'edit'>...</span>
+            </div>
 
+            <div class="task-info mt-5 overflow-hidden">
+              <p class = "task-info-header float-start">Суть задачи</p>
+              <img class = "task-info-avatar float-end" src = "images/Ellipse9.png">
+              <p class = "task-info-addition float-start">Доп. информация</p>
+            </div>
+
+            <div class = "task-more mt-5"></div>
+            <div class = "task-more mt-5"></div>
+
+            <button class = "add-task-btn btn btn-light mt-5">Добавить задачу</button>
+          </div>
         </div>
 
-        <div class="col">
-          <div class="tasks mt-4">
+        <div class="col d-flex justify-content-center">
+          <div class = "tasks ready-task">
+            <div class = 'd-flex task-heading'>
+              <h3 class = 'task-heading-title text-center mt-3 pt-1'>Готов</h3>
+              <span class = 'edit'>...</span>
+            </div>
+
+            <div class="task-info mt-5 overflow-hidden">
+              <p class = "task-info-header float-start">Суть задачи</p>
+              <img class = "task-info-avatar float-end" src = "images/Ellipse9.png">
+              <p class = "task-info-addition float-start">Доп. информация</p>
+            </div>
+
+            <div class = "task-more mt-5"></div>
+            <div class = "task-more mt-5"></div>
+
+            <button class = "add-task-btn btn btn-light mt-5">Добавить задачу</button>
           </div>
         </div>
       </div>
     </div>
-
   </main>
 
+  <footer class = "bg-info">
+    <div class = "container d-flex">
+      <a href = "#" class = "link px-3 my-4">Тыкай)))</a>
+      <p class = "copyrite text-center my-4">Этот дизайн создал и задизайнил Дениска Осипов из ИСП-220р</p>
+    </div>
   <script src = 'js/bootstrap.bundle.min.js'></script>
   </body>
 </html>
