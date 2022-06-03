@@ -1,0 +1,60 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+.new-col-btn{
+  width: 144px;
+  background-color: #FD6DD4;
+  color: black;
+}
+.main-title{
+  font-size: 21px;
+}
+.secondary-title{
+  font-size: 22px;
+}
+.task-table{
+  background-color: #F5D5FB;
+}
+.tasks{
+  background-color: #D48EFF;
+  width: 240px;
+  height: 401px;
+  border-radius: 10px;
+}
+.task-heading{
+  font-size: 16px;
+  background-color: #7A65FA;
+  border-radius: 10px;
+  position: relative;
+  top: 15px;
+  width: 144px;
+  height: 35px;
+  left: 20px;
+
+}
+.heading{
+  height: 50px
+}
+.edit{
+  position: relative;
+  left: 70px;
+  font-size: 36px;
+  top: 8px;
+}
+.task-heading-title{
+  font-size: 22px;
+}
+.container{
+  max-width: 1600px;
+}
+.task-info{
+  width: 193px;
+  height: 91.3px;
+  background-color: #D9D9D9;
+  position: relative;
+  left: 20px;
+  border-radius: 10px;
+}
