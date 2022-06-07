@@ -121,9 +121,9 @@
                   </div>
                 </div>
               </div>
+                <!-- Конец модального окна -->
             </div>
           </div>
-          <!-- Конец модального окна -->
         </div>
       </div>
     </header>
@@ -138,11 +138,120 @@
                 <span class = 'edit'>...</span>
               </div>
 
-              <div class="task-info mt-5">
+              <button class="task-info mt-5" type="button" data-bs-toggle="modal" data-bs-target="#showMoreModal">
                 <p class = "task-info-header float-start">Суть задачи</p>
                 <img class = "task-info-avatar float-end" src = "images/Ellipse9.png">
                 <p class = "task-info-addition float-start">Доп. информация</p>
-              </div>
+              </button>
+
+              <div class="modal fade" id="showMoreModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div class = "modal-body-txt mt-3">
+                        <form>
+                          <div class="mb-3">
+                            <div class = "row">
+                              <div class= "col-9">
+                                <div class = "showMore-title">"Столбец с задачами"(название, например "Дела")</div>
+                                <div class = "showMore-title mt-4">Текущая задача:</div>
+
+                                <label class="col-form-label">Суть задачи</label>
+                                <input type="text" class="form-control" id="col-name" placeholder="Текст задачи">
+
+                                <label class="col-form-label mt-5">Описание</label>
+                                <input type="text" class="form-control" id="col-description" placeholder="Описание стобца">
+
+                                <label class="col-form-label mt-5">Действия </label>
+                                <div class="row mt-3">
+                                  <div class="col">
+                                    <input type="text" class="form-control form-action">
+                                  </div>
+                                  <div class="col">
+                                    <input type="text" class="form-control form-action">
+                                  </div>
+                                  <div class="col mt-4">
+                                    <button type="button" class = "btn btn-showMore">Подробнее:</button>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col">
+                                    <input type="text" class="form-control form-action">
+                                  </div>
+                                  <div class="col">
+                                    <input type="text" class="form-control form-action">
+                                  </div>
+                                  <div class="col">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class = "row">
+                                  <label class = "add-members">Текущие участники:</label>
+
+                                  <div class = "col-3">
+                                    <img class = "mt-2" src = "images/Ellipse9.png" height = "50" width = "50">
+                                  </div>
+
+                                  <div class = "col-3">
+                                    <img class = "mt-2" src = "images/icon1.png" height = "50" width = "50">
+                                  </div>
+
+                                  <div class = "col-3">
+                                    <img class = "mt-2"src = "images/icon2.png" height = "50" width = "50">
+                                  </div>
+
+                                  <div class = "col-3">
+                                    <div class = "add-members-button d-flex justify-content-center overflow-hidden float-left align-items-center mt-2">
+                                      <div class = "vertical-line"></div>
+                                      <div class = "horizontal-line"></div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <label class = "possible-actions mt-5">Возможные действия</label>
+                                <button class = "task-action members mt-3">
+                                  <img class = "action-img mt-2 float-start" src = "images/members.png" alt="" width = "23" height = "18">
+                                  <span class = 'action-txt float-start'>Участники</span>
+                                </button>
+
+                                <button class = "task-action tags mt-3" data-bs-toggle="modal" data-bs-target="#secondModal">
+                                  <img class = "action-img mt-2 float-start" src = "images/tag.png" alt="" width = "23" height = "18">
+                                  <span class = 'action-txt float-start'>Метки</span>
+                                </button>
+
+                                <button class = "task-action date mt-3">
+                                  <img class = "action-img mt-2 float-start" src = "images/date.png" alt="" width = "20" height = "18">
+                                  <span class = 'action-txt float-start'>Даты</span>
+                                </button>
+
+                                <button class = "task-action date mt-3">
+                                  <img class = "action-img float-start mt-1" src = "images/inside.png" alt="">
+                                  <span class = 'float-start' id = "ins">Вложения</span>
+                                </button>
+
+
+                                <button type = "button" class="btn btn-success btn-edit save-row align-items-bottom">
+                                  <img class = "edit-img" src = "images/editer.png" alt = "">
+                                  <span class = "edit-task">Изменить</span>
+                                </button>
+
+                                <button type = "button" class = "btn btn-delete mt-3 align-items-bottom">
+                                  <img src = "images/bascket.png" alt = "">
+                                  Удалить задачу
+                                </button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <!-- Конец модального окна -->
 
               <div class = "task-more mt-5"></div>
               <div class = "task-more mt-5"></div>
@@ -242,11 +351,11 @@
                 <span class = 'edit'>...</span>
               </div>
 
-              <div class="task-info mt-5 overflow-hidden">
+              <button class="task-info mt-5 overflow-hidden" data-bs-toggle="modal" data-bs-target="#showMoreModal">
                 <p class = "task-info-header float-start">Суть задачи</p>
-                <img class = "task-info-avatar float-end" src = "images/Ellipse9.png">
+                <img class = "task-info-avatar float-end" src = "images/second.png">
                 <p class = "task-info-addition float-start">Доп. информация</p>
-              </div>
+              </button>
 
               <div class = "task-more mt-5"></div>
               <div class = "task-more mt-5"></div>
@@ -261,11 +370,11 @@
                 <span class = 'edit'>...</span>
               </div>
 
-              <div class="task-info mt-5 overflow-hidden">
+              <button class="task-info mt-5 overflow-hidden" data-bs-toggle="modal" data-bs-target="#showMoreModal">
                 <p class = "task-info-header float-start">Суть задачи</p>
-                <img class = "task-info-avatar float-end" src = "images/Ellipse9.png">
+                <img class = "task-info-avatar float-end" src = "images/third.png">
                 <p class = "task-info-addition float-start">Доп. информация</p>
-              </div>
+              </button>
 
               <div class = "task-more mt-5"></div>
               <div class = "task-more mt-5"></div>
@@ -281,11 +390,11 @@
                 <span class = 'edit'>...</span>
               </div>
 
-              <div class="task-info mt-5 overflow-hidden">
+              <button class="task-info mt-5 overflow-hidden" data-bs-toggle="modal" data-bs-target="#showMoreModal">
                 <p class = "task-info-header float-start">Суть задачи</p>
-                <img class = "task-info-avatar float-end" src = "images/Ellipse9.png">
+                <img class = "task-info-avatar float-end" src = "images/fourth.png">
                 <p class = "task-info-addition float-start">Доп. информация</p>
-              </div>
+              </button>
 
               <div class = "task-more mt-5"></div>
               <div class = "task-more mt-5"></div>
@@ -299,7 +408,7 @@
 
     <footer class = "bg-info">
       <div class = "container d-flex">
-        <a href = "https://vk.com/mnogosushi35" class = "link px-3 my-4">Тыкай)))</a>
+        <a href = "#" class = "link px-3 my-4">Тыкай)))</a>
         <p class = "copyrite text-center my-4">Этот дизайн создал и задизайнил Дениска Осипов из ИСП-220р</p>
       </div>
     <script src = 'js/bootstrap.bundle.min.js'></script>

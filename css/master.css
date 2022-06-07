@@ -54,6 +54,7 @@ html { font-family: 'Inter', sans-serif; }
   border-radius: 10px;
   position: relative;
   margin-left: 22px;
+  border: none;
 }
 .task-info-header, .task-info-addition{
   position: relative;
@@ -173,4 +174,30 @@ html { font-family: 'Inter', sans-serif; }
   margin-top: 114px;
   border-radius: 15px;
   font-size: 20px;
+}
+.showMore-title{
+  font-size: 22px;
+  width: 100%;
+}
+.add-members{
+  width: 100%;
+}
+.btn-delete{
+  background-color: rgba(244, 56, 56, 0.7);
+  border-radius: 15px;
+  width: 200px;
+  font-size: 20px;
+}
+.btn-edit{
+  width: 200px;
+}
+.edit-img{
+  position: relative;
+  right: 25px;
+  bottom: 3px;
+}
+.edit-task{
+  position: relative;
+  right: 25px;
+  bottom: 2px;
 }
