@@ -2,7 +2,7 @@
 html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
-}
+}a
 
 .new-col-btn{
   width: 144px;
@@ -48,13 +48,14 @@ html { font-family: 'Inter', sans-serif; }
   max-width: 1300px;
 }
 .task-info{
+  border: none;
   width: 193px;
   height: 98px;
   background-color: #D9D9D9;
   border-radius: 10px;
   position: relative;
   margin-left: 22px;
-  border: none;
+ 
 }
 .task-info-header, .task-info-addition{
   position: relative;
