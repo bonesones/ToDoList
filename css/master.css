@@ -9,6 +9,11 @@ html { font-family: 'Inter', sans-serif; }
   background-color: #FD6DD4;
   color: black;
 }
+.new-col-btn:visited{
+  width: 144px;
+  background-color: #FD6DD4;
+  color: black;
+}
 .main-title{
   font-size: 21px;
 }
