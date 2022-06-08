@@ -74,27 +74,105 @@
                                 <span class = 'action-txt float-start'>Участники</span>
                               </button>
 
-                              <button class = "task-action tags mt-3" data-bs-toggle="modal" data-bs-target="#secondModal">
+                              <div class = "modal-window container closed">
+                                <h3 class = "all-members-title text-center">Все участники</h3>
+
+                                <div class = "members-list mt-4 row">
+                                  <div class = "col-3 members-images">
+                                    <img class = "first-member" src = "images/fourth.png">
+                                    <img class = "secondt-member mt-3" src = "images/Ellipse9.png">
+                                    <img class = "fitst-member mt-3" src = "images/second.png">
+                                    <img class = "fitst-member mt-3" src = "images/third.png">
+                                  </div>
+
+                                  <div class = "col-7">
+                                    <div class = "fitst-member-name name">Ноунейм</div>
+                                    <div class = "second-member-name name mt-3">Король</div>
+                                    <div class = "third-member-name name mt-3">Рыбак</div>
+                                    <div class = "fourth-member-name name mt-3">Колдун</div>
+                                  </div>
+
+                                  <div class = "col-2 plus-col">
+                                    <div class= "first-plus plus">
+                                      <div class = "vertical" ></div>
+                                      <div class = "horizontal"></div>
+                                    </div>
+
+                                    <div class= "second-plus plus">
+                                      <div class = "vertical"></div>
+                                      <div class = "horizontal"></div>
+                                    </div>
+
+                                    <div class= "third-plus plus">
+                                      <div class = "vertical"></div>
+                                      <div class = "horizontal"></div>
+                                    </div>
+
+                                    <div class= "fourth-plus plus">
+                                      <div class = "vertical"></div>
+                                      <div class = "horizontal"></div>
+                                    </div>
+                                  </div>
+
+
+                                </div>
+                              </div>
+
+
+                              <button class = "task-action tags mt-3">
                                 <img class = "action-img mt-2 float-start" src = "images/tag.png" alt="" width = "23" height = "18">
                                 <span class = 'action-txt float-start'>Метки</span>
                               </button>
-                              <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="secondModalLabel">Modal title</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                              <div class = "tags modal-window container closed">
+                                <div class="row justify-content-center">
+
+                                  <h3 class = "all-members-title text-center">Добавить метку</h3>
+
+                                  <textarea class = "tag-text-input" placeholder = "Текст метки"></textarea>
+
+                                  <div class="tag-painter container">
+                                    <h4 class = "tag-title text-center">Цвет метки</h4>
+
+                                    <div class="row mt-3 color-blocks">
+
+                                      <div class="col">
+                                        <div class="red-color tag-color"></div>
+                                        <div class="blue-color mt-2 tag-color"></div>
+                                      </div>
+
+                                      <div class="col ">
+                                        <div class="orange-color tag-color"></div>
+                                        <div class="pink-color mt-2 tag-color"></div>
+                                      </div>
+
+                                      <div class="col">
+                                        <div class="yellow-color tag-color"></div>
+                                        <div class="grey-color mt-2 tag-color"></div>
+                                      </div>
+
+                                      <div class="col">
+                                        <div class="green-color tag-color"></div>
+                                        <div class="black-color mt-2 tag-color"></div>
+                                      </div>
+
+                                      <div class="col">
+                                        <div class="light-blue-color tag-color"></div>
+                                        <div class="pink-color mt-2 tag-color"></div>
+                                      </div>
+
                                     </div>
-                                    <div class="modal-body">
-                                      ...
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                      <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
+
                                   </div>
+
+                                  <div class="add-color-tag green-color">
+                                    <div id = "add-color-vertical-line" class="vertical-line"></div>
+                                    <div id = "add-color-horizontal-line" class="horizontal-line"></div>
+                                  </div>
+
                                 </div>
                               </div>
+
 
                               <button class = "task-action date mt-3">
                                 <img class = "action-img mt-2 float-start" src = "images/date.png" alt="" width = "20" height = "18">
@@ -160,11 +238,11 @@
                                 <label class="col-form-label">Суть задачи</label>
                                 <input type="text" class="form-control" id="col-name" placeholder="Текст задачи">
 
-                                <label class="col-form-label mt-5">Описание</label>
+                                <label class="col-form-label mt-3">Описание</label>
                                 <input type="text" class="form-control" id="col-description" placeholder="Описание стобца">
 
-                                <label class="col-form-label mt-5">Действия </label>
-                                <div class="row mt-3">
+                                <label class="col-form-label mt-3">Действия </label>
+                                <div class="row mt-2">
                                   <div class="col">
                                     <input type="text" class="form-control form-action">
                                   </div>
@@ -210,7 +288,7 @@
                                   </div>
                                 </div>
 
-                                <label class = "possible-actions mt-5">Возможные действия</label>
+                                <label class = "possible-actions mt-3">Возможные действия</label>
                                 <button class = "task-action members mt-3">
                                   <img class = "action-img mt-2 float-start" src = "images/members.png" alt="" width = "23" height = "18">
                                   <span class = 'action-txt float-start'>Участники</span>
@@ -232,7 +310,7 @@
                                 </button>
 
 
-                                <button type = "button" class="btn btn-success btn-edit save-row align-items-bottom">
+                                <button type = "button" class="btn btn-success btn-edit save-row">
                                   <img class = "edit-img" src = "images/editer.png" alt = "">
                                   <span class = "edit-task">Изменить</span>
                                 </button>
@@ -253,8 +331,8 @@
                 </div>
             <!-- Конец модального окна -->
 
-              <div class = "task-more mt-5"></div>
-              <div class = "task-more mt-5"></div>
+              <div class = "task-more mt-4"></div>
+              <div class = "task-more mt-4"></div>
 
               <button class = "add-task-btn btn btn-light mt-5" data-bs-toggle="modal" data-bs-target="#newTaskModal">Добавить задачу</button>
 
@@ -357,8 +435,8 @@
                 <p class = "task-info-addition float-start">Доп. информация</p>
               </button>
 
-              <div class = "task-more mt-5"></div>
-              <div class = "task-more mt-5"></div>
+              <div class = "task-more mt-4"></div>
+              <div class = "task-more mt-4"></div>
 
               <button class = "add-task-btn btn btn-light mt-5" data-bs-toggle="modal" data-bs-target="#newTaskModal">Добавить задачу</button>
             </div>
@@ -376,8 +454,8 @@
                 <p class = "task-info-addition float-start">Доп. информация</p>
               </button>
 
-              <div class = "task-more mt-5"></div>
-              <div class = "task-more mt-5"></div>
+              <div class = "task-more mt-4"></div>
+              <div class = "task-more mt-4"></div>
 
               <button class = "add-task-btn btn btn-light mt-5" data-bs-toggle="modal" data-bs-target="#newTaskModal">Добавить задачу</button>
             </div>
@@ -396,8 +474,8 @@
                 <p class = "task-info-addition float-start">Доп. информация</p>
               </button>
 
-              <div class = "task-more mt-5"></div>
-              <div class = "task-more mt-5"></div>
+              <div class = "task-more mt-4"></div>
+              <div class = "task-more mt-4"></div>
 
               <button class = "add-task-btn btn btn-light mt-5" data-bs-toggle="modal" data-bs-target="#newTaskModal">Добавить задачу</button>
             </div>
@@ -411,6 +489,8 @@
         <a href = "#" class = "link px-3 my-4">Тыкай)))</a>
         <p class = "copyrite text-center my-4">Этот дизайн создал и задизайнил Дениска Осипов из ИСП-220р</p>
       </div>
+    </footer>
+    <script src = 'js/script.js'></script>
     <script src = 'js/bootstrap.bundle.min.js'></script>
   </body>
 </html>

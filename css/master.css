@@ -12,12 +12,7 @@ html { font-family: 'Inter', sans-serif; }
 btn-primary{
    background-color: #FD6DD4;
 }
-.new-col-btn:visited{
-  width: 144px;
-  background-color: #FD6DD4;
-  color: black;
-  border: none;
-}
+
 .main-title{
   font-size: 21px;
 }
@@ -30,7 +25,7 @@ btn-primary{
 .tasks{
   background-color: #D48EFF;
   width: 240px;
-  height: 471px;
+  height: 431px;
   border-radius: 10px;
   margin-top: 20%;
   margin-bottom: 20%;
@@ -64,7 +59,7 @@ btn-primary{
   border-radius: 10px;
   position: relative;
   margin-left: 22px;
- 
+
 }
 .task-info-header, .task-info-addition{
   position: relative;
@@ -181,7 +176,7 @@ btn-primary{
   background-color: rgba(78, 228, 138, 0.5);
   color: black;
   border: none;
-  margin-top: 114px;
+  margin-top: 54px;
   border-radius: 15px;
   font-size: 20px;
 }
@@ -210,4 +205,136 @@ btn-primary{
   position: relative;
   right: 25px;
   bottom: 2px;
+}
+.modal-window{
+  position: fixed;
+  z-index: 1;
+  width: 200px;
+  height: 250px;
+  background: rgba(239, 200, 200, 1);
+  border-radius: 15px;
+}
+.first-member{
+  position: relative;
+  left: 4px;
+}
+
+.all-members-title{
+  font-size: 18px;
+  position: relative;
+  top: 10px;
+}
+.fourth-member-name{
+  position: relative;
+  top: 5px;
+}
+.members-images{
+  position: relative;
+}
+.third-member-name{
+  position: relative;
+  top: 2px;
+}
+.vertical{
+  background-color: black;
+  width: 1px;
+  height: 18px;
+}
+.horizontal{
+  position: relative;
+  background-color: black;
+  width: 18px;
+  height: 1px;
+  right: 9px;
+  bottom: 8px;
+
+}
+.plus{
+  margin-top: 30px;
+}
+.plus-col{
+  position: relative;
+  bottom: 23px;
+}
+.closed{
+  display: none;
+}
+.opened{
+  display: block;
+}
+.tag-text-input{
+  width: 150px;
+  height: 20px;
+  border-radius: 15px;
+  border: none;
+  resize: none;
+  font-size: 14px;
+  overflow: hidden;
+  position: relative;
+  top: 20px;
+}
+.tag-text-input::placeholder{
+  font-size: 14px;
+}
+.tag-title{
+  font-size: 16px;
+}
+.tag-color{
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+}
+.tag-painter{
+  position: relative;
+  top: 47px;
+}
+.red-color{
+  background-color: #FF0000;
+}
+.color-blocks{
+  background-color: white;
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.orange-color{
+  background: #FF6B00;
+}
+.yellow-color{
+  background: #FAFF00;
+}
+.green-color{
+  background: #00FF38;
+}
+.light-blue-color{
+  background: #59A5FF;
+}
+.blue-color{
+  background: #0047FF;
+}
+.pink-color{
+  background: #BD00FF;
+}
+.grey-color{
+  background: #C1C1C1;
+}
+.black-color{
+  background: #000000;
+}
+.add-color-tag{
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  position: relative;
+  top: 75px;
+}
+#add-color-vertical-line{
+  position: absolute;
+  left: 16px;
+  top: 5px;
+}
+#add-color-horizontal-line{
+  position: absolute;
+  right: 6px;
+  top: 14px;
 }
